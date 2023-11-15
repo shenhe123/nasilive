@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">good直播</string>
+
+    <string name="live_send_gift">发送礼物</string>
+    <string name="live_send_gift_1">送</string>
+    <string name="live_send_gift_2">个</string>
+    <string name="live_send_gift_3">送了一个</string>
+    <string name="live_gift_send">赠送</string>
+    <string name="live_gift_send_lian">连送</string>
+    <string name="live_gift_send_lian_2">x</string>
+    <string name="live_gift_send_lian_3">连送 x</string>
+    <string name="live_join">加入直播间</string>
+    <string name="live_attend_anchor">关注了主播</string>
+    <string name="live_hot">热度：</string>
+    <string name="live_recommend">推荐你这个直播</string>
+    <string name="live_no_shop">当前主播没有商品</string>
+    <string name="live_fail">推流失败</string>
+    <string name="live_num">人观看</string>
+
+    <string name="time_hour">小时</string>
+    <string name="time_minute">分钟</string>
+    <string name="time_second">秒</string>
+
+    <string name="Live_Finish">直播结束</string>
+    <string name="Gift_Send">送出</string>
+    <string name="Gold_Not_Enough">余额不足</string>
+    <string name="Live_Income">直播获得钻石数：</string>
+    <string name="Ohter_Ways">其他登录方式</string>
+    <string name="Bind_Now">立即绑定</string>
+    <string name="Complete_Information">请填写完整信息</string>
+    <string name="Bind_Phone">绑定手机</string>
+    <string name="Bind_Success">绑定成功</string>
+    <string name="Bind_Fail">绑定失败</string>
+    <string name="Send_code">获取验证码</string>
+    <string name="Enter_password">请设置登录密码</string>
+    <string name="Nick_name">昵称</string>
+    <string name="Input_Nick_name">请输入昵称</string>
+    <string name="Gender">性别</string>
+    <string name="Chose_Gender">请选择性别</string>
+    <string name="Constellation">星座</string>
+    <string name="Chose_Constellation">请选择星座</string>
+    <string name="Weight">体重(kg)</string>
+    <string name="Input_Weight">请输入体重</string>
+    <string name="City">城市</string>
+    <string name="Input_City">请输入城市</string>
+    <string name="Height">身高(cm)</string>
+    <string name="Input_Height">请输入身高</string>
+    <string name="Avatar">头像</string>
+    <string name="Signature">个性签名</string>
+    <string name="Edit_Signature">请编辑个性签名</string>
+    <string name="Career">职业</string>
+    <string name="Input_Career">请输入职业</string>
+    <string name="Photo_Wall">照片墙</string>
+    <string name="Edit_Photo_Wall">编辑照片墙</string>
+    <string name="Edit_User_Info">编辑个人资料</string>
+    <string name="Info">资料</string>
+    <string name="Anything_illegal_is_strictly_prohibited">严禁上传任何违反国家法律法规内容</string>
+    <string name="Phone_number">手机号</string>
+    <string name="Bind_phone_number">绑定手机号</string>
+    <string name="Age">年龄</string>
+    <string name="Input_Age">年龄</string>
+    <string name="Change_password">忘记密码</string>
+    <string name="Enter_phone_number">请输入11位手机号</string>
+    <string name="Enter_verification_code">请输入验证码</string>
+    <string name="Submit">确定</string>
+    <string name="Cancel">取消</string>
+    <string name="Cancel_Paid">是否取消动态收费</string>
+    <string name="Enter_new_password">请输入密码</string>
+    <string name="Area_code">+86</string>
+    <string name="Send">发送</string>
+    <string name="Save_Success">保存成功</string>
+    <string name="Save_Fail">保存失败</string>
+    <string name="Save">保存</string>
+    <string name="Audiences">人正在观看</string>
+    <string name="Normal">普通房间</string>
+    <string name="Category">频道</string>
+    <string name="Live_title">直播标题</string>
+    <string name="Contribution_list">贡献榜</string>
+    <string name="Start">开始直播</string>
+    <string name="Room_type">房间类型</string>
+    <string name="Income_diamond">收入钻石</string>
+    <string name="Paid">付费房间</string>
+    <string name="Input_Paid">请设置房间金额(金币/分钟)</string>
+    <string name="Write_a_live_title">给直播写个标题吧</string>
+    <string name="Password">私密房间</string>
+    <string name="Home">首页</string>
+    <string name="ShortVideo">短视频</string>
+    <string name="Moment">动态</string>
+    <string name="Rank">排行榜</string>
+    <string name="Me">我的</string>
+    <string name="Login">登录</string>
+    <string name="Record">录制</string>
+    <string name="Duet">双屏合拍</string>
+    <string name="Trio">三屏合拍</string>
+    <string name="EditVideo">视频编辑</string>
+    <string name="EditPhoto">照片编辑</string>
+    <string name="InProcessing">视频处理中</string>
+    <string name="LinkCopied">链接已复制到剪贴板</string>
+    <string name="TitlePlaceHolder">输入视频的标题,让更多人看到吧~</string>
+    <string name="SaveVideo">保存至本地</string>
+    <string name="Publish">发布</string>
+    <string name="TitleLenghtLimit">标题超过最大字数限制</string>
+    <string name="Gold_Coin">金币</string>
+    <string name="Videos">作品</string>
+
+    <string name="Liked">喜欢</string>
+
+    <string name="Hot">热门</string>
+    <string name="Following">关注</string>
+    <string name="Write">写动态</string>
+    <string name="Photo">图片</string>
+    <string name="Video">视频</string>
+
+    <string name="RichRank">富豪榜</string>
+    <string name="StarRank">明星榜</string>
+    <string name="Day">日榜</string>
+    <string name="Week">周榜</string>
+    <string name="Month">月榜</string>
+    <string name="All">总榜</string>
+
+    <string name="Recharge">充值</string>
+    <string name="Wallet">我的钱包</string>
+    <string name="VipCenter">贵族中心</string>
+    <string name="UserLevel">用户等级</string>
+    <string name="Shop">直播小店</string>
+    <string name="MyMoment">我的动态</string>
+    <string name="MyShortVideo">我的短视频</string>
+    <string name="MyCollection">我的收藏</string>
+    <string name="IntimacyRank">亲密榜</string>
+    <string name="ProfitLog">收益记录</string>
+    <string name="InviteFriend">邀请好友</string>
+    <string name="AnchorGuild">主播公会</string>
+    <string name="BusinessCooperation">商务合作</string>
+    <string name="Setting">设置</string>
+    <string name="LiveLog">直播管理</string>
+    <string name="AnchorAuthentication">认证主播</string>
+    <string name="SwiftMessage">快捷消息</string>
+
+
+
+
+    <string name="AboutUs">关于我们</string>
+    <string name="Policy">使用条款和隐私政策</string>
+    <string name="Cache">清理缓存</string>
+    <string name="Version">当前版本</string>
+    <string name="Logout">退出登录</string>
+    <string name="Language">语言设置</string>
+
+
+    <string name="Terms_Of_Use_and_Privacy_Policy">《good直播用户协议》</string>
+    <string name="WeChat">微信</string>
+    <string name="read_and_agree">注册或登录代表您同意</string>
+    <string name="Mobile">手机</string>
+
+    <string name="Follow">关注</string>
+    <string name="Fabulous">获赞</string>
+    <string name="Fans">粉丝</string>
+    <string name="Visitor">访客</string>
+    <string name="Login_Reigster">登录 / 注册</string>
+
+    <string name="Register_now">立即注册</string>
+    <string name="Login_with_mobile_phone">手机号登录</string>
+    <string name="Say_Something">记录生活，拥抱美好...</string>
+    <string name="Warn">尊敬的用户，您发布的内容须遵守相关法律法规和平台规则,请严格遵守相关规定，以免违规。</string>
+    <string name="Set_paid_content">设置为付费观看动态</string>
+    <string name="Paid_content">付费动态</string>
+    <string name="Pulish_Moment">发动态</string>
+    <string name="For_U">推荐</string>
+    <string name="Pull_to_refresh">下拉刷新内容</string>
+    <string name="Dermabrasion">磨皮</string>
+    <string name="White">美白</string>
+    <string name="Ruddy">红润</string>
+    <string name="Face">美颜</string>
+    <string name="Filter">滤镜</string>
+
+    <string name="Input_Title">请输入标题</string>
+    <string name="Input_Tumb">请选择封面</string>
+    <string name="Chose_Room_Type">请选择分类</string>
+
+    <string name="Publish_Success">发布成功</string>
+    <string name="Publish_Fail">发布失败</string>
+    <string name="Anchor_No_Live">当前主播休息中</string>
+    <string name="Input_Error">密码输入错误</string>
+
+    <string name="Coin_Time">金币/分钟</string>
+
+    <string name="Warn_Not_Enough_Coin">当前为收费房间,余额不足</string>
+    <string name="AccountManage">账户管理</string>
+    /**包含了 排行榜 绑定手机页面1 编辑个人信息页面1 忘记密码页面1 直播页面(3个) 主页 登录页面1 主播个人页面 用户和人页面 注册页面1 发送动态页面 home 短视频页面*/
+
+
+</resources>

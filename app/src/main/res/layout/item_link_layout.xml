@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_link_away"
+    android:layout_width="115dp"
+    android:layout_height="170dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/txcv_link"
+            android:layout_width="115dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/iv_close_link"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_live_push_close"
+            android:paddingVertical="20dp" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="290dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_black_80"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp"
+            android:text="@string/st_gift"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingHorizontal="12dp"
+            android:text="@string/st_gift_charge"
+            android:textColor="@color/color_theme"
+            android:textSize="15sp"
+
+            />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_gift"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginHorizontal="5dp"
+        android:layout_weight="1" />
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/ci_gift"
+        android:layout_width="match_parent"
+        app:ci_drawable="@drawable/shape_theme_round"
+        app:ci_drawable_unselected="@drawable/shape_corner_white_45"
+        android:layout_height="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:paddingHorizontal="10dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_send_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_chat_gift_send_2"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/st_send_gift"
+                android:textColor="@drawable/fg_btn_gift_send"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_choose"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_send"
+                android:background="@drawable/bg_chat_gift_choose"
+                android:gravity="center"
+                android:paddingRight="13dp"
+                android:text="1"
+                android:textColor="@color/global"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ic_arrow"
+                android:layout_width="13dp"
+                android:layout_height="7dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/tv_send"
+                android:rotation="180"
+                android:src="@mipmap/icon_chat_gift_arrow"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/global"
+            tools:text="123456"
+            android:textSize="15sp"
+            android:drawableRight="@mipmap/ic_gift_gold"
+        />
+    </FrameLayout>
+
+
+</LinearLayout>

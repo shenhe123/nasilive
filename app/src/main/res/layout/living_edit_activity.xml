@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_live_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_live_edit">
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/tcv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_live_push_close" />
+
+    <LinearLayout
+        android:id="@+id/live_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="@dimen/dp_100"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cover_iv"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@drawable/ic_live_push_cover" />
+
+        <LinearLayout
+            android:layout_width="0px"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/st_live_title"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+
+                android:hint="@string/st_live_push_title"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.feicui365.live.widget.DrawableTextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+
+            android:drawablePadding="11dp"
+            android:text="@string/st_category"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:dt_right_drawable="@drawable/ic_more_white"
+            app:dt_right_height="8dp"
+            app:dt_right_width="8dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_start_live"
+        android:layout_width="@dimen/dp_224"
+        android:layout_height="@dimen/dp_41"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="@string/st_start_live"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/live_title_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="@dimen/dp_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="用户昵称是否隐藏"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/lo_default_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/checkbox_style"
+            android:button="@null"
+            android:checked="false"
+            android:scaleX="0.6"
+            android:scaleY="0.6" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dtv_room_type"
+        android:layout_marginBottom="@dimen/dp_100"
+        >
+
+        <TextView
+            android:id="@+id/iv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="33dp"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_horizontal"
+            android:text="翻转"
+            android:textColor="@color/color_main_theme_color"
+            android:drawableTop="@mipmap/ic_live_push_camera" />
+
+
+        <TextView
+            android:id="@+id/iv_beauty"
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="33dp"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_horizontal"
+            android:text="美颜"
+            android:textColor="@color/color_main_theme_color"
+            android:drawableTop="@mipmap/ic_live_push_beauty" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dtv_room_type"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/tv_start_live"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@mipmap/ic_live_edit_room_type"
+        android:gravity="center"
+        android:text="@string/st_normal_room"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

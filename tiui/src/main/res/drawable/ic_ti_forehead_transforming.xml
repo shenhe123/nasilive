@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018 拓幻科技-2020 - tillusory.cn. All rights reserved.-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_ti_forehead_transforming_selected" android:state_selected="true" />
+    <item android:drawable="@drawable/ic_ti_forehead_transforming_selected" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_ti_forehead_transforming_unselected" />
+</selector>

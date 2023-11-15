@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sort_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar_iv"
+            android:layout_width="@dimen/dp_43"
+            android:layout_height="@dimen/dp_43"
+            android:layout_marginStart="@dimen/dp_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sort_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nick_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="用户昵称"
+            android:textColor="#ff535353"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/avatar_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_37"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="北京市朝阳区"
+            android:textColor="#ff535353"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/nick_name_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/totalTimes_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_11"
+            android:layout_toRightOf="@+id/city_tv"
+            android:text="180.8时"
+            android:layout_marginStart="@dimen/dp_14"
+            android:textColor="#ff535353"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/avatar_iv"
+            app:layout_constraintTop_toBottomOf="@+id/nick_name_tv" />
+
+        <TextView
+            android:id="@+id/watchTimes_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180.8时"
+            app:layout_constraintTop_toBottomOf="@+id/city_tv"
+            android:textColor="#ff535353"
+            android:layout_marginTop="@dimen/dp_11"
+            android:layout_marginStart="@dimen/dp_50"
+            app:layout_constraintStart_toEndOf="@+id/totalTimes_tv"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/liveTimes_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_50"
+            android:layout_toRightOf="@+id/city_tv"
+            android:text="180.8时"
+            android:layout_marginTop="@dimen/dp_11"
+            app:layout_constraintStart_toEndOf="@+id/watchTimes_tv"
+            app:layout_constraintTop_toBottomOf="@+id/city_tv"
+            android:textColor="#ff535353"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#B5B5B5" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

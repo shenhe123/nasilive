@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+   >
+
+
+
+    <TextView
+        android:id="@+id/tv_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_theme_round"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:text="@string/st_post"
+
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_face"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_emoji" />
+
+
+
+
+    <EditText
+        android:id="@+id/chat_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_send_button"
+        android:layout_toRightOf="@id/iv_face"
+        android:background="@drawable/shape_line_gray2"
+        android:gravity="center_vertical"
+        android:hint="@string/st_post_a_comment"
+        android:imeOptions="actionSend|flagNoExtractUi|flagNoFullscreen"
+        android:inputType="text"
+        android:maxLength="500"
+        android:maxLines="1"
+        android:paddingVertical="8dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/color_5A5A5A"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

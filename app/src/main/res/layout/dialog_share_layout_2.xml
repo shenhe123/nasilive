@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/shape_corner_white2">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:text="分享给"
+            android:textColor="#333333" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal">
+
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bottom"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_below="@id/rv_top"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal">
+
+
+        </android.support.v7.widget.RecyclerView>
+        <View
+            android:id="@+id/v_1"
+            android:layout_width="match_parent"
+            android:layout_below="@id/rv_bottom"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_height="0.5dp"
+            android:background="#fff5f5f5"/>
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:textSize="15sp"
+            android:text="取消"
+            android:gravity="center"
+            android:layout_below="@id/v_1"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

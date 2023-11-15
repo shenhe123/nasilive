@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_130">
+
+    <ImageView
+        android:id="@+id/iv_item_acvatar"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@drawable/shape_corner_gray4"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#fff"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_shop_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_toRightOf="@id/iv_item_acvatar" />
+
+
+    <TextView
+        android:id="@+id/tv_shop_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_toRightOf="@id/iv_item_acvatar"
+        android:textColor="#E1244D" />
+
+    <ImageView
+        android:id="@+id/iv_see"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_25"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:src="@mipmap/btn_finisih" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#fff5f5f5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+
+        />
+</RelativeLayout>

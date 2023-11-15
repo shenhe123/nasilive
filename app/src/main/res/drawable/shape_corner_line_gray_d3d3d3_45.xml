@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 设置按钮的左上角和右下角为弧形 -->
+
+
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/color_D4D3D3" />
+    <corners android:radius="45dp"
+       />
+</shape>

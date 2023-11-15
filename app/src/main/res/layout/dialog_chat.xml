@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner_white2"
+    android:layout_marginTop="@dimen/dp_300"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="消息"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_F5F5F5"
+        />
+    <LinearLayout
+        android:id="@+id/system_news"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:layout_width="@dimen/dp_41"
+            android:layout_height="@dimen/dp_41"
+            android:src="@mipmap/ic_system_news"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统消息"
+            android:textColor="#ff333333"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="@dimen/dp_7"
+            android:layout_height="@dimen/dp_11"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/arrow_right"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+<!--
+
+    <com.tencent.qcloud.tim.uikit.modules.conversation.ConversationLayout
+        android:id="@+id/conversation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+
+</LinearLayout>

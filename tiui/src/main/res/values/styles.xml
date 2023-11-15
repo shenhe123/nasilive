@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018-2020 拓幻科技 - tillusory.cn. All rights reserved.-->
+<resources>
+
+    <style name="TiTextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@drawable/color_ti_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

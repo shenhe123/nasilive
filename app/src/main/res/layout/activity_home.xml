@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <com.feicui365.live.widget.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent" android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/home_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_tab_iv"
+                android:layout_width="@dimen/dp_29"
+                android:layout_height="@dimen/dp_29"
+                android:layout_gravity="center"
+                android:src="@mipmap/zhibo_pre" />
+
+            <TextView
+                android:id="@+id/home_tab_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Home"
+                android:textColor="@color/color_theme"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/short_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_weight="1"
+            android:orientation="vertical">>
+
+            <ImageView
+                android:id="@+id/short_tab_iv"
+                android:layout_width="@dimen/dp_29"
+                android:layout_height="@dimen/dp_29"
+                android:layout_gravity="center"
+                android:src="@mipmap/video" />
+
+            <TextView
+                android:id="@+id/short_tab_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ShortVideo"
+                android:textColor="@color/color_939393"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trend_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_weight="1"
+            android:orientation="vertical">>
+
+            <ImageView
+                android:id="@+id/trend_tab_iv"
+                android:layout_width="@dimen/dp_29"
+                android:layout_height="@dimen/dp_29"
+                android:layout_gravity="center"
+                android:src="@mipmap/dongtai" />
+
+            <TextView
+                android:id="@+id/trend_tab_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Moment"
+                android:textColor="@color/color_939393"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rank_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_weight="1"
+
+            android:orientation="vertical">>
+
+            <ImageView
+                android:id="@+id/rank_tab_iv"
+                android:layout_width="@dimen/dp_29"
+                android:layout_height="@dimen/dp_29"
+                android:layout_gravity="center"
+                android:src="@mipmap/paihang" />
+
+            <TextView
+                android:id="@+id/rank_tab_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Rank"
+                android:textColor="@color/color_939393"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_3"
+
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_my"
+                android:layout_width="@dimen/dp_29"
+                android:layout_height="@dimen/dp_29"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/my_tab_iv"
+                    android:layout_width="@dimen/dp_29"
+                    android:layout_height="@dimen/dp_29"
+                    android:src="@mipmap/wode" />
+
+                <TextView
+                    android:id="@+id/tv_red_hot"
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_round_red"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/my_tab_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_my"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/Me"
+                android:textColor="@color/color_939393"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

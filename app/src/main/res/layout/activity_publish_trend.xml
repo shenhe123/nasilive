@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/shape_corner_gray2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_11"
+            android:layout_height="@dimen/dp_11"
+            android:layout_marginLeft="@dimen/dp_11"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/ic_notice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/Warn"
+            android:textColor="#A6A6A6"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_15"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="@string/Say_Something"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                android:id="@+id/snpl_moment_add_photos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:bga_snpl_deleteDrawable="@mipmap/ic_delete_3"
+                app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                app:bga_snpl_editable="true"
+                app:bga_snpl_itemCornerRadius="0dp"
+                app:bga_snpl_itemSpanCount="3"
+                app:bga_snpl_itemWhiteSpacing="4dp"
+                app:bga_snpl_itemWidth="0dp"
+                app:bga_snpl_maxItemCount="9"
+                app:bga_snpl_otherWhiteSpacing="10dp"
+                app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
+                app:bga_snpl_plusDrawable="@mipmap/tianjia"
+                app:bga_snpl_plusEnable="true"
+                app:bga_snpl_sortable="false" />
+
+            <RelativeLayout
+                android:id="@+id/rL_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/iv_plus"
+                    android:layout_width="@dimen/dp_113"
+                    android:layout_height="@dimen/dp_113"
+                    android:src="@mipmap/tianjia" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_video_into"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <com.dueeeke.videoplayer.player.VideoView
+                        android:id="@+id/video_player"
+                        android:layout_width="@dimen/dp_228"
+                        android:layout_height="@dimen/dp_307" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_delete_3" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_shoufei"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_27"
+
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/shape_corner_gray"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="@dimen/dp_13"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_11"
+                        android:src="@mipmap/nofufei" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_7"
+                        android:text="@string/Set_paid_content"
+                        android:textColor="#A6A6A6"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shoufei_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_27"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/shape_corner_purple3"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="@dimen/dp_13"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_11"
+                        android:src="@mipmap/fufei_trend" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_7"
+                        android:text="@string/Paid_content"
+                        android:textColor="#B377FD"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="@dimen/dp_13"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_11"
+                        android:src="@mipmap/coin" />
+
+                    <TextView
+                        android:id="@+id/tv_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:text="10"
+                        android:textColor="#B377FD"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

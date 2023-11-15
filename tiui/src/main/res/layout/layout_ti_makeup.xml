@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/ti_bg_panel_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/tiMakeupBackLL"
+        android:layout_width="98dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="55dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_ti_back" />
+
+        <TextView
+            android:id="@+id/tiMakeupTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="15dp"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/ti_selected"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="55dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/ti_divider" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tiMakeupRV"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

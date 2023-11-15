@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="15dp"
+        android:src="@mipmap/moren" />
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/civ_avatar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/color_888888"
+            android:textSize="14sp"
+            tools:text="ID:"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_top"
+        android:layout_toRightOf="@id/civ_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_ip"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical
+"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:textColor="@color/color_888888"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_manager"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/shape_line_red"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:text="设置管理员"
+            android:textColor="#717171"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_ban"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_line_red"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:text="禁言"
+            android:textColor="#717171"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_kick"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_line_red"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:text="踢人"
+            android:textColor="#717171"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_middle"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_F4F4F4" />
+
+</RelativeLayout>

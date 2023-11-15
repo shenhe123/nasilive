@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_corner_gray">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:hint="@string/Enter_phone_number" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_corner_gray"
+            >
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:hint="@string/Enter_password" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_corner_gray"
+            >
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:hint="@string/Enter_verification_code" />
+
+            <TextView
+                android:id="@+id/tv_getcode"
+                android:layout_width="76dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:background="@drawable/shape_corner_theme"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="@string/Send_code" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv_submit"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:background="@drawable/shape_corner_theme"
+        android:text="@string/Submit" />
+
+
+</LinearLayout>

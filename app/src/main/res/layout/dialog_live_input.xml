@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_send"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/chat_et"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_15"
+
+                android:layout_weight="1"
+
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="说点什么吧..."
+                android:imeOptions="actionSend"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#bdbdbd"
+                android:textSize="15sp"
+
+                />
+        </LinearLayout>
+
+</RelativeLayout>

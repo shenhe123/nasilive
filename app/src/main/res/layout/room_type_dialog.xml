@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_room_type"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/color_black_20"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_normal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.feicui365.live.widget.DrawableTextView
+            android:id="@+id/dtv_normal"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/st_normal_room"
+            android:textColor="@color/color_room_chose"
+            android:textSize="13sp"
+            app:dt_top_drawable="@drawable/ic_room_normal_pre"
+            app:dt_top_height="30dp"
+            app:dt_top_width="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.feicui365.live.widget.DrawableTextView
+            android:id="@+id/dtv_price"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/st_price_room"
+            android:textColor="@color/white"
+
+            android:textSize="13sp"
+            app:dt_top_drawable="@drawable/ic_room_paid"
+            app:dt_top_height="30dp"
+            app:dt_top_width="30dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.feicui365.live.widget.DrawableTextView
+            android:id="@+id/dtv_password"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/st_password_room"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:dt_top_drawable="@drawable/ic_room_password"
+            app:dt_top_height="30dp"
+            app:dt_top_width="30dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

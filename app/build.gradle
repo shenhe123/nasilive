@@ -1,0 +1,296 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+
+MobSDK {
+    appKey ""
+    appSecret ""
+    ShareSDK {
+        loopShare false
+        devInfo {
+            Wechat {
+                appId ""
+                appSecret ""
+                userName ""
+                path "pages/index/index.html?id=1"
+                withShareTicket true
+                miniprogramType 2
+            }
+            QQ {
+                appId ""
+                appKey ""
+            }
+            SinaWeibo {
+                appKey ""
+                appSecret ""
+                callbackUri "http://www.sharesdk.cn"
+            }
+            WechatMoments {
+                appId ""
+                appSecret ""
+            }
+            WechatFavorite {
+                appId ""
+                appSecret ""
+            }
+            QZone {
+                appId ""
+                appKey ""
+            }
+        }
+    }
+}
+
+
+android {
+    signingConfigs {
+        relesae {
+            storeFile file("feicui.jks")
+            storePassword '365feicui'
+            keyAlias = 'key0'
+            keyPassword '365feicui'
+        }
+
+//        debug  {
+//            storeFile file('C:\\work2\\feicui.jks')
+//            storePassword '365feicui'
+//            keyAlias = 'key0'
+//            keyPassword '365feicui'
+//        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
+    defaultConfig {
+        applicationId "com.feicui365.live"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 6
+        versionName "1.0.4"
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "licenceURL", '"https://license.vod2.myqcloud.com/license/v2/1314028597_1/v_cube.license"'
+            buildConfigField "String", "licenceKey", '"6e924bf2c11fcd253172bf37222aa06d"'
+            minifyEnabled false
+            signingConfig signingConfigs.relesae
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "licenceURL", '"https://license.vod2.myqcloud.com/license/v2/1314028597_1/v_cube.license"'
+            buildConfigField "String", "licenceKey", '"6e924bf2c11fcd253172bf37222aa06d"'
+            signingConfig signingConfigs.relesae
+        }
+    }
+
+    // 拷贝这段代码起始位置
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+    implementation project(path: ':tuicore')
+    implementation project(path: ':tuichat')
+    implementation project(path: ':tuiconversation')
+    implementation project(path: ':xmagickit')
+    implementation project(path: ':ugckit')
+    compile fileTree(dir: 'libs', include: ['*.aar', '*.jar'])
+    // 导入腾讯云短视频SDK jar
+    implementation fileTree(dir: 'src/main/jniLibs', includes: ['*.jar'])
+    //   implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.android.support:appcompat-v7:28+'
+    implementation 'com.android.support:design:28+'
+    implementation 'com.android.support:support-v4:28+'
+    implementation 'com.android.support:recyclerview-v7:28+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation project(path: ':picture_library')
+    implementation 'com.github.svga:SVGAPlayer-Android:2.6.1'
+    implementation 'com.android.support:coordinatorlayout:28.+'
+
+    testImplementation 'junit:junit:4.12'
+    //  androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    //  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    //AutoDispose解决RxJava内存泄漏
+    /*  implementation 'com.uber.autodispose:autodispose:0.7.0'
+      implementation 'com.uber.autodispose:autodispose-android:0.7.0'
+      implementation 'com.uber.autodispose:autodispose-android-archcomponents:0.7.0'*/
+//Material-dialogs
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+//butterknife
+    //   implementation 'com.jakewharton:butterknife:9.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
+
+
+//okhttp3
+    implementation 'com.squareup.okhttp3:okhttp:3.12.5'
+    implementation "com.squareup.okhttp3:logging-interceptor:3.12.5"
+    implementation 'com.squareup.okio:okio:2.2.1'
+//retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+//rxjava2
+    // implementation "io.reactivex.rxjava2:rxjava:2.1.12"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+//greendao
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+//沉浸式状态栏
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+    //权限管理
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    implementation 'com.github.xiaohaibin:XBanner:1.7.3'
+    // -------------------- 以下4个库是必须依赖的 ----------------------------
+    implementation 'cn.bingoogolapple:bga-photopicker:1.2.9@aar'
+    implementation 'cn.bingoogolapple:bga-baseadapter:1.2.9@aar'
+    // -------------------- 以上4个库是必须依赖的 ----------------------------
+
+    //上下拉
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.danikula:videocache:2.7.1'
+    implementation "com.facebook.fresco:fresco:1.10.0"
+
+    implementation 'com.android.support:cardview-v7:+'
+
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
+
+
+    implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
+
+    implementation 'com.lxj:xpopup:1.8.10'
+    implementation 'pub.devrel:easypermissions:1.0.1'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+    implementation 'com.github.orhanobut:hawk:1.21'
+    implementation 'com.alibaba:fastjson:1.1.71.android'
+
+    // implementation(name: 'imsdk-4.8.50', ext: 'aar')
+
+    // 拷贝这段代码起始位置
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    implementation 'com.yanzhenjie:permission:2.0.0-rc4'
+    implementation 'com.android.support:design:23.4.0'
+
+    implementation project(':beauty')
+//    implementation project(':ugckit')
+    implementation project(path: ':picture_library')
+    implementation project(path: ':ucrop')
+//    implementation project(path: ':lib_tcsuperplayer')
+    //  implementation project(path: ':SVGAPlayer')
+
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    implementation 'com.androidkun:XTabLayout:1.1.4'
+
+
+    // 必选，内部默认使用系统mediaplayer进行解码
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:3.0.3'
+
+    // 可选，包含StandardVideoController的实现
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:3.0.3'
+
+    implementation files('libs\\open_sdk_r8353806_lite.jar')
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    // 可选，使用exoplayer进行解码
+    //  implementation 'com.github.dueeeke.dkplayer:player-exo:3.0.3'
+    //app-updater
+    implementation 'com.king.app:app-updater:1.0.8'
+    //app-dialog
+    implementation 'com.king.app:app-dialog:1.0.8'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.21'
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+    implementation 'com.wang.avi:library:2.1.3'
+//    implementation project(path: ':tuikit2')
+    implementation project(path: ':tiui')
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    compile project(path: ':nasinet')
+    implementation 'com.example.zhouwei.library:library:1.0.0'
+
+    api 'com.uber.autodispose:autodispose:0.7.0'
+    api 'com.uber.autodispose:autodispose-android:0.7.0'
+    api 'com.uber.autodispose:autodispose-android-archcomponents:0.7.0'
+    //工具类
+    implementation 'com.blankj:utilcode:1.26.0'
+    implementation 'com.king.app:app-updater:1.0.8'
+
+    implementation 'com.zyp.cardview:cardview:1.0.1'
+    implementation files('libs\\tbs_sdk_thirdapp_v4.3.0.39_43939_sharewithdownloadwithfile_withoutGame_obfs_20200713_223411.jar')
+
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    implementation 'com.kyleduo.switchbutton:library:2.0.3'
+
+    // scanningCode
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.3.7'
+
+    implementation 'com.bm.photoview:library:1.4.1'
+
+    //socket.io
+    implementation('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    //7牛
+    implementation 'com.tencent.liteav:LiteAVSDK_Professional:latest.release@aar'
+    implementation 'me.relex:circleindicator:1.3.2'
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    api 'com.tencent.imsdk:imsdk-plus:6.5.2816'
+    implementation 'com.gcssloop.recyclerview:pagerlayoutmanager:2.3.8'
+    //  compile 'com.qcloud.cos:cos-android:5.9.+'
+    //   implementation 'com.tencent:mmkv:1.0.22'
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    implementation 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+
+    api 'com.alipay.sdk:alipaysdk-android:+@aar'
+
+}
+tasks.whenTaskAdded { task ->
+    if (task.name == 'mergeDebugNativeLibs') {
+        task.doFirst {
+            println("------------------- find so files start -------------------")
+
+            it.inputs.files.each { file ->
+                printDir(new File(file.absolutePath))
+            }
+
+            println("------------------- find so files end -------------------")
+        }
+    }
+}
+
+def printDir(File file) {
+    if (file != null) {
+        if (file.isDirectory()) {
+            file.listFiles().each {
+                printDir(it)
+            }
+        } else if (file.absolutePath.endsWith(".so")) {
+            println "find so file: $file.absolutePath"
+        }
+    }
+}

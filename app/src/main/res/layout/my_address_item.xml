@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_check"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="@dimen/dp_13"
+            android:layout_height="@dimen/dp_10"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@mipmap/ic_address_choose"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_edit"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_address_edit"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/rl_edit"
+        android:layout_toRightOf="@id/rl_check">
+
+        <LinearLayout
+            android:id="@+id/ll_address_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+
+                android:textColor="@color/color_747474"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_address_top"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

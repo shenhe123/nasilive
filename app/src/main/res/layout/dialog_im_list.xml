@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_corner_white_half_45"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="IM"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/color_beauty_translucent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/meiyan_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42.5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.5dp"
+                    android:text="@string/Dermabrasion"
+                    android:textColor="@color/color_FEFEFE"
+                    android:textSize="13sp" />
+
+                <SeekBar
+                    android:id="@+id/mopi_seek_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="9"
+                    android:maxHeight="3.4dp"
+                    android:minHeight="3.4dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:progress="8"
+                    android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/bg_seek_bar_thumb" />
+
+                <TextView
+                    android:id="@+id/mopi_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="15.5dp"
+                    android:text="8"
+                    android:textColor="@color/color_FEFEFE"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.5dp"
+                    android:text="@string/White"
+                    android:textColor="@color/color_FEFEFE"
+                    android:textSize="13sp" />
+
+                <SeekBar
+                    android:id="@+id/meibai_seek_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="9"
+                    android:maxHeight="3.4dp"
+                    android:minHeight="3.4dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:progress="5"
+                    android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/bg_seek_bar_thumb" />
+
+                <TextView
+                    android:id="@+id/meibai_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="15.5dp"
+                    android:text="5"
+                    android:textColor="@color/color_FEFEFE"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.5dp"
+                android:layout_marginBottom="27dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.5dp"
+                    android:text="@string/Ruddy"
+                    android:textColor="@color/color_FEFEFE"
+                    android:textSize="13sp" />
+
+                <SeekBar
+                    android:id="@+id/hongrun_seek_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="9"
+                    android:maxHeight="3.4dp"
+                    android:minHeight="3.4dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:progress="3"
+                    android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/bg_seek_bar_thumb" />
+
+                <TextView
+                    android:id="@+id/hongrun_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="15.5dp"
+                    android:text="3"
+                    android:textColor="@color/color_FEFEFE"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27.5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <SeekBar
+                android:id="@+id/filter_seek_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47.5dp"
+                android:layout_marginRight="47.5dp"
+                android:layout_marginBottom="37.5dp"
+                android:max="10"
+                android:maxHeight="3.4dp"
+                android:minHeight="3.4dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                android:splitTrack="false"
+                android:thumb="@drawable/bg_seek_bar_thumb" />
+
+            <com.feicui365.live.widget.HorizontalListView
+                android:id="@+id/filter_list"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="12.5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/meiyan_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/meiyan_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/Face"
+                    android:textColor="@color/color_main_theme_color"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/meiyan_view"
+                    android:layout_width="12dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8.5dp"
+                    android:background="@color/color_main_theme_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/filter_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/filter_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/Filter"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/filter_view"
+                    android:layout_width="12dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8.5dp"
+                    android:background="@color/color_main_theme_color"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.feicui365.live.widget.PopupLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    app:pop_arrow_height="10dp"
+    app:pop_arrow_width="18dp"
+    app:pop_bg_color="@color/white"
+    app:pop_radius="5dp"
+    app:pop_stroke_color="@color/global"
+    app:pop_stroke_width="1dp"
+    android:background="@color/transparent"
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+
+        android:layout_height="wrap_content"
+
+        />
+
+</com.feicui365.live.widget.PopupLayout>

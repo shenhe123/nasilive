@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="50dp"
+    android:background="@mipmap/bg_all_gift">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/dp_10">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:src="@mipmap/logo" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@id/civ_avatar"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_FFF728"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:singleLine="true"
+            android:layout_toRightOf="@id/tv_name"
+            android:text="在"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_anchor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:layout_toRightOf="@id/tv_1"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_FFF728"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:singleLine="true"
+            android:layout_toRightOf="@id/tv_anchor_name"
+            android:text="的直播间"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:singleLine="true"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@id/civ_avatar"
+            android:text="送出一个"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_3"
+            android:layout_below="@id/tv_name"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_FFF728"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

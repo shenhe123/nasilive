@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/avatar_iv"
+
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"/>
+</RelativeLayout>

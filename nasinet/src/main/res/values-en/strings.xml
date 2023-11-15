@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+
+	<string name="app_name">NaSiLive</string>
+
+
+
+	<string name="live_send_gift">send a gift</string>
+
+	<string name="live_send_gift_1">send</string>
+
+	<string name="live_send_gift_2">a</string>
+
+	<string name="live_send_gift_3">send one</string>
+
+	<string name="live_gift_send">gift</string>
+
+	<string name = "live_gift_send_lian">even sent</string>
+
+	<string name="live_gift_send_lian_2">x</string>
+
+	<string name="live_gift_send_lian_3">send x</string>
+
+	<string name="live_join">join the live room</string>
+
+	<string name="live_attend_anchor">followed the anchor</string>
+
+	<string name="live_hot"> Popularity :</string>
+
+	<string name="live_recommend">recommend you this live broadcast</string>
+
+	<string name="live_no_shop">The current anchor has no products</string>
+
+	<string name="live_fail">push stream failed</string>
+
+	<string name="live_num">people watch</string>
+
+
+
+	<string name="time_hour">hour</string>
+
+	<string name="time_minute">minutes</string>
+
+	<string name="time_second">second</string>
+
+
+
+	<string name="Live_Finish">Live Finish</string>
+	<string name="Gift_Send">Send</string>
+	<string name="Gold_Not_Enough">Gold is not enough</string>
+	<string name="Live_Income">Get diamonds number</string>
+	<string name="Ohter_Ways">Other login methods</string>
+	<string name="Bind_Now">Bind now</string>
+	<string name="Complete_Information">Please fill in the complete information</string>
+	<string name="Bind_Phone">Bind Phone</string>
+	<string name="Bind_Success">Bind Success</string>
+	<string name="Bind_Fail">Bind Fail</string>
+	<string name="Send_code">Send Code</string>
+	<string name="Enter_password">Enter Password</string>
+	<string name="Nick_name">Nick Name</string>
+	<string name="Input_Nick_name">Input nick name</string>
+	<string name="Gender">Gender</string>
+	<string name="Chose_Gender">Chose your gender</string>
+	<string name="Constellation">Constellation</string>
+	<string name="Chose_Constellation">Chose your constellation</string>
+	<string name="Weight">Weight(kg)</string>
+	<string name="Input_Weight">Input your weight</string>
+	<string name="City">City</string>
+	<string name="Input_City">Input city</string>
+	<string name="Height">Height(cm)</string>
+	<string name="Input_Height">Input your height</string>
+	<string name="Avatar">Avatar</string>
+	<string name="Signature">Signature</string>
+	<string name="Edit_Signature">Edit your signature</string>
+	<string name="Career">Career</string>
+	<string name="Input_Career">Input your career</string>
+	<string name="Photo_Wall">Photo Wall</string>
+	<string name="Edit_Photo_Wall">Edit photo wall</string>
+	<string name="Edit_User_Info">Edit your info</string>
+	<string name="Info">Info</string>
+	<string name="Anything_illegal_is_strictly_prohibited">Anything illegal is strictly prohibited</string>
+	<string name="Phone_number">Phone Number</string>
+	<string name="Bind_phone_number">Bind phone number</string>
+	<string name="Age">Age</string>
+	<string name="Input_Age">Input your age</string>
+	<string name="Change_password">Change password</string>
+	<string name="Enter_phone_number">Enter phone number</string>
+	<string name="Enter_verification_code">Enter verification code</string>
+	<string name="Submit">Submit</string>
+	<string name="Cancel">Cancel</string>
+	<string name="Cancel_Paid">Do you want to cancel moment charging</string>
+	<string name="Enter_new_password">Enter new password</string>
+	<string name="Area_code">+86</string>
+	<string name="Send">Send</string>
+	<string name="Save_Success">Save success</string>
+	<string name="Save_Fail">Save fail</string>
+	<string name="Save">Save</string>
+	<string name="Audiences">Audiences</string>
+	<string name="Normal">Normal</string>
+	<string name="Category">Category</string>
+	<string name="Live_title">Live title</string>
+	<string name="Contribution_list">Contribution list</string>
+	<string name="Start">Start</string>
+	<string name="Room_type">Room type</string>
+	<string name="Income_diamond">Income diamond</string>
+	<string name="Paid">Paid</string>
+	<string name="Input_Paid">Please set room amount (gold coin / minute)</string>
+	<string name="Write_a_live_title">Write a live title</string>
+	<string name="Password">Password</string>
+	<string name="Home">Home</string>
+	<string name="ShortVideo">ShortVideo</string>
+	<string name="Moment">Moment</string>
+	<string name="Rank">Rank</string>
+	<string name="Me">Me</string>
+	<string name="Login">Login</string>
+	<string name="Record">Record</string>
+	<string name="Duet">Duet</string>
+	<string name="Trio">Trio</string>
+	<string name="EditVideo">EditVideo</string>
+	<string name="EditPhoto">EditPhoto</string>
+	<string name="InProcessing">InProcessing</string>
+	<string name="LinkCopied">LinkCopied</string>
+	<string name="TitlePlaceHolder">Enter the title of the video for more people to see~</string>
+	<string name="SaveVideo">SaveVideo</string>
+	<string name="Publish">Publish</string>
+	<string name="TitleLenghtLimit">TitleLenghtLimit</string>
+	<string name="Gold_Coin">Gold Coin</string>
+	<string name="Videos">Works</string>
+
+	<string name="Liked">Liked</string>
+
+	<string name="Hot">Hot</string>
+	<string name="Following">Following</string>
+	<string name="Write">Write</string>
+	<string name="Photo">Photo</string>
+	<string name="Video">Video</string>
+
+	<string name="RichRank">RichRank</string>
+	<string name="StarRank">StarRank</string>
+	<string name="Day">Day</string>
+	<string name="Week">Week</string>
+	<string name="Month">Month</string>
+	<string name="All">All</string>
+
+	<string name="Recharge">Recharge</string>
+	<string name="Wallet">Wallet</string>
+	<string name="VipCenter">VipCenter</string>
+	<string name="UserLevel">UserLevel</string>
+	<string name="Shop">Shop</string>
+	<string name="MyMoment">MyMoment</string>
+	<string name="MyShortVideo">MyShortVideo</string>
+	<string name="MyCollection">MyCollection</string>
+	<string name="IntimacyRank">IntimacyRank</string>
+	<string name="ProfitLog">ProfitLog</string>
+	<string name="InviteFriend">InviteFriend</string>
+	<string name="AnchorGuild">AnchorGuild</string>
+	<string name="BusinessCooperation">BusinessCooperation</string>
+	<string name="Setting">Setting</string>
+	<string name="LiveLog">LiveManage</string>
+	<string name="AnchorAuthentication">AnchorAuthentication</string>
+
+
+	<string name="AboutUs">AboutUs</string>
+	<string name="Policy">Policy</string>
+	<string name="Cache">Cache</string>
+	<string name="Version">Version</string>
+	<string name="Logout">Logout</string>
+	<string name="Language">Language</string>
+
+
+	<string name="Terms_Of_Use_and_Privacy_Policy">《Terms Of Use And PrivacyPolicy》</string>
+	<string name="WeChat">WeChat</string>
+	<string name="read_and_agree">Registering or logging in represents your consent</string>
+	<string name="Mobile">Mobile</string>
+
+	<string name="Follow">Follow</string>
+	<string name="Fabulous">Fabulous</string>
+	<string name="Fans">Fans</string>
+	<string name="Visitor">Visitor</string>
+	<string name="Login_Reigster">登录 / 注册</string>
+
+	<string name="Register_now">Register now</string>
+	<string name="Login_with_mobile_phone">Login with mobile phone</string>
+	<string name="Say_Something">Say Something</string>
+	<string name="Warn">Dear users, the content you publish must comply with the relevant laws and regulations and platform rules. Please strictly abide by the relevant provisions to avoid violation.</string>
+	<string name="Set_paid_content">Set paid content</string>
+	<string name="Paid_content">Paid content</string>
+	<string name="Pulish_Moment">Pulish Moment</string>
+	<string name="For_U">For U</string>
+	<string name="Pull_to_refresh">下拉刷新内容</string>
+	<string name="Dermabrasion">Dermabrasion</string>
+	<string name="White">White</string>
+	<string name="Ruddy">Ruddy</string>
+	<string name="Face">Face</string>
+	<string name="Filter">Filter</string>
+
+	<string name="Input_Title">Input title</string>
+	<string name="Input_Tumb">Input tumb</string>
+	<string name="Chose_Room_Type">Chose room type</string>
+
+	<string name="Publish_Success">Publish Success</string>
+	<string name="Publish_Fail">Publish Fail</string>
+	<string name="Anchor_No_Live">Anchor No Live</string>
+	<string name="Input_Error">Input error</string>
+
+	<string name="Coin_Time">Gold / min</string>
+
+	<string name="Warn_Not_Enough_Coin">Current charge room, insufficient balance</string>
+    <string name="SwiftMessage">"Swift message  "</string>
+    <string name="AccountManage">Account Message</string>
+
+</resources>
+

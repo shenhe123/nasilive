@@ -1,0 +1,115 @@
+{
+  "makeups": [
+    {
+      "name": "qingse",
+      "thumb": "b_qingse_icon.png",
+      "type": "blusher",
+      "downloaded": false
+    },
+    {
+      "name": "riza",
+      "thumb": "b_riza_icon.png",
+      "type": "blusher",
+      "downloaded": false
+    },
+    {
+      "name": "tiancheng",
+      "thumb": "b_tiancheng_icon.png",
+      "type": "blusher",
+      "downloaded": false
+    },
+    {
+      "name": "youya",
+      "thumb": "b_youya_icon.png",
+      "type": "blusher",
+      "downloaded": false
+    },
+    {
+      "name": "weixun",
+      "thumb": "b_weixun_icon.png",
+      "type": "blusher",
+      "downloaded": false
+    },
+    {
+      "name": "xindong",
+      "thumb": "b_xindong_icon.png",
+      "type": "blusher",
+      "downloaded": false
+    },
+
+    {
+      "name": "biaozhunmei",
+      "thumb": "eb_biaozhunmei_icon.png",
+      "type": "eyebrow",
+      "downloaded": false
+    },
+    {
+      "name": "jianmei",
+      "thumb": "eb_jianmei_icon.png",
+      "type": "eyebrow",
+      "downloaded": false
+    },
+    {
+      "name": "liuyemei",
+      "thumb": "eb_liuyemei_icon.png",
+      "type": "eyebrow",
+      "downloaded": false
+    },
+    {
+      "name": "pingzhimei",
+      "thumb": "eb_pingzhimei_icon.png",
+      "type": "eyebrow",
+      "downloaded": false
+    },
+    {
+      "name": "liuxingmei",
+      "thumb": "eb_liuxingmei_icon.png",
+      "type": "eyebrow",
+      "downloaded": false
+    },
+    {
+      "name": "oushimei",
+      "thumb": "eb_oushimei_icon.png",
+      "type": "eyebrow",
+      "downloaded": false
+    },
+
+    {
+      "name": "ziran",
+      "thumb": "el_ziran_icon.png",
+      "type": "eyelash",
+      "downloaded": false
+    },
+    {
+      "name": "rouhe",
+      "thumb": "el_rouhe_icon.png",
+      "type": "eyelash",
+      "downloaded": false
+    },
+    {
+      "name": "nongmi",
+      "thumb": "el_nongmi_icon.png",
+      "type": "eyelash",
+      "downloaded": false
+    },
+    {
+      "name": "meihuo",
+      "thumb": "el_meihuo_icon.png",
+      "type": "eyelash",
+      "downloaded": false
+    },
+    {
+      "name": "babi",
+      "thumb": "el_babi_icon.png",
+      "type": "eyelash",
+      "downloaded": false
+    },
+    {
+      "name": "wumei",
+      "thumb": "el_wumei_icon.png",
+      "type": "eyelash",
+      "downloaded": false
+    }
+
+  ]
+}

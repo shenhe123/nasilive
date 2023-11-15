@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_top"
+    android:background="@color/color_F4F7FF">
+
+    <LinearLayout
+        android:id="@+id/root_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_F4F7FF">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/chat_list"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/chat_et"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/send_text_bg"
+                android:gravity="center_vertical"
+                android:text="快来调侃一下主播吧"
+                android:textColor="#acacac"
+                android:imeOptions="actionSend"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="15sp"/>
+            <TextView
+                android:text="发送"
+                android:id="@+id/send_chat_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:id="@+id/chat_gitf_iv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/ic_gift"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_gitf_ll"
+        android:layout_width="match_parent"
+        android:layout_height="320.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13.5dp"
+                android:layout_weight="1"
+                android:text="礼物"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recharge_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13.5dp"
+                android:layout_marginRight="15.5dp"
+                android:drawableRight="@mipmap/yellow_more_ic"
+                android:drawablePadding="6dp"
+                android:text="充值"
+                android:textColor="@color/color_FFCE37"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/gift_view_ager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+        </android.support.v4.view.ViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginBottom="21dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/overage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableRight="@mipmap/gold_ic"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="866"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/send_grid_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15.5dp"
+                android:src="@mipmap/send_gift_ic" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_guardian"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_42"
+
+
+
+            android:src="@mipmap/shouhu"
+            />
+
+
+        <ImageView
+            android:id="@+id/talk_manager"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_42"
+            android:layout_marginTop="@dimen/dp_12"
+
+            android:visibility="gone"
+            android:src="@mipmap/guanli"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

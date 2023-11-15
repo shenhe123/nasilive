@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_push_fragment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_27"
+        android:background="@drawable/shape_corner_black_15_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/iv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/live_flip"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="翻转"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12" />
+
+        <TextView
+            android:id="@+id/iv_beauty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:drawableTop="@mipmap/live_beauty"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="美化"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12" />
+
+        <TextView
+            android:id="@+id/iv_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:drawableTop="@mipmap/live_mic"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="闭麦"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12" />
+
+        <TextView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:drawableTop="@mipmap/live_manage"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="人员管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12" />
+
+        <TextView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:drawableTop="@mipmap/live_share"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12" />
+
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/iv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/live_set"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/rl_pk_status"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:backgroundTint="@color/transparent"
+            android:visibility="gone"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/giv_bg_pk"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                app:autoPlay="true"
+                app:loopCount="0" />
+
+            <TextView
+                android:id="@+id/tv_pk_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/st_pk_searching"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical">
+
+        <Chronometer
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/live_corner_bg"
+            android:format="HH:mm:ss"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="6dp"
+            android:textColor="@color/white"
+
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_9"
+            android:layout_toEndOf="@+id/tv_time"
+            android:src="@mipmap/live_close_room" />
+
+    </LinearLayout>
+
+
+    <!--    聊天&礼物-->
+
+    <!-- <TextView
+         android:id="@+id/iv_set"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginLeft="@dimen/dp_28"
+         android:layout_marginEnd="@dimen/dp_28"
+         android:layout_marginBottom="@dimen/dp_20"
+         android:drawableTop="@mipmap/live_set"
+         android:drawablePadding="@dimen/dp_6"
+         android:text="设置"
+         android:textColor="@color/white"
+         android:textSize="@dimen/textSize_12" />-->
+    <!--    主播名称&热度-->
+    <LinearLayout
+        android:id="@+id/ll_watcher"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+
+        <!---->
+
+
+        <TextView
+            android:id="@+id/tv_watchers"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginTop="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/live_corner_bg"
+            android:drawableLeft="@mipmap/ic_live_count"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="8dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:text="0" />
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_gray_20_0b0b0b"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/st_live_income_diamond_anchor"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_income_diamonds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+
+                android:gravity="center"
+                android:textColor="@color/color_FF8B02"
+                android:textSize="12sp"
+                tools:text="123" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_live_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_gray_20_0b0b0b"
+            android:drawableLeft="@mipmap/ic_live_white_round_more"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp"
+            android:text="@string/st_live_rank_text"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_above="@id/rl_bottom"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="@dimen/dp_100">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chat"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

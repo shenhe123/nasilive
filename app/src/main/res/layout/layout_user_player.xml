@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_pk_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/rl_pk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/txcv_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_home_user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_transparent_20_20"
+                android:orientation="horizontal"
+                android:visibility="gone"
+            >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_home_streamer"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_home_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLength="8"
+                    android:maxLines="1"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_home_follow"
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_pk_follow" />
+
+
+            </LinearLayout>
+
+
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/svga_home"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_away"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_away_user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_transparent_20_20"
+                android:orientation="horizontal"
+               >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_away_streamer"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_away_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLength="8"
+                    android:maxLines="1"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_away_follow"
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+
+                    android:src="@drawable/ic_pk_follow" />
+            </LinearLayout>
+
+
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/svga_away"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+        <!--PK框架部分结束-->
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svga_center"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_pk_time"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/pk_black_time"
+            android:gravity="center"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="11sp"
+            android:visibility="gone"
+            tools:text="惩罚时间 00:00" />
+
+
+        <!--上半部分结束-->
+    </RelativeLayout>
+
+    <com.feicui365.live.widget.PkProgressBar
+        android:id="@+id/pb_pk"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:visibility="gone"
+        android:layout_below="@id/rl_pk" />
+
+
+</RelativeLayout>

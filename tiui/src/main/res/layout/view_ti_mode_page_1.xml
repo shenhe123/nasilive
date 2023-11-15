@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="225dp"
+    android:background="@color/ti_bg_panel_content"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true">
+
+    <cn.tillusory.tiui.custom.DrawableTextView
+        android:id="@+id/beauty"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:drawablePadding="19dp"
+        android:gravity="center"
+        android:text="@string/beauty"
+        android:textColor="@color/ti_unselected"
+        android:textSize="12sp"
+        app:dt_top_drawable="@drawable/ic_ti_mode_beauty"
+        app:dt_top_height="32dp"
+        app:dt_top_width="32dp" />
+
+    <cn.tillusory.tiui.custom.DrawableTextView
+        android:id="@+id/face_trim"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:drawablePadding="19dp"
+        android:gravity="center"
+        android:text="@string/face_trim"
+        android:textColor="@color/ti_unselected"
+        android:textSize="12sp"
+        app:dt_top_drawable="@drawable/ic_ti_mode_face_trim"
+        app:dt_top_height="32dp"
+        app:dt_top_width="32dp" />
+
+    <cn.tillusory.tiui.custom.DrawableTextView
+        android:id="@+id/cute"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:drawablePadding="19dp"
+        android:gravity="center"
+        android:text="@string/mode_cute"
+        android:textColor="@color/ti_unselected"
+        android:textSize="12sp"
+        app:dt_top_drawable="@drawable/ic_ti_mode_cute"
+        app:dt_top_height="32dp"
+        app:dt_top_width="32dp" />
+
+    <cn.tillusory.tiui.custom.DrawableTextView
+        android:id="@+id/filter"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:drawablePadding="19dp"
+        android:gravity="center"
+        android:text="@string/filter"
+        android:textColor="@color/ti_unselected"
+        android:textSize="12sp"
+        app:dt_top_drawable="@drawable/ic_ti_mode_filter"
+        app:dt_top_height="32dp"
+        app:dt_top_width="32dp" />
+
+</LinearLayout>

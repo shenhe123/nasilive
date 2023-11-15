@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mode_cute">Cute</string>
+    <string name="quick_beauty">QuickBeauty</string>
+    <string name="standard">Standard</string>
+    <string name="delicate">Delicate</string>
+    <string name="cute">Cute</string>
+    <string name="celebrity">Celebrity</string>
+    <string name="natural">Natural</string>
+
+    <string name="makeup">Makeup</string>
+    <string name="makeup_on">Makeup:On</string>
+    <string name="makeup_off">Makeup:Off</string>
+    <string name="blusher">Blusher</string>
+    <string name="eyelash">Eyelash</string>
+    <string name="eyebrow">Eyebrow</string>
+
+    <string name="qingse">QingSe</string>
+    <string name="riza">RiZa</string>
+    <string name="tiancheng">TianCheng</string>
+    <string name="youya">YouYa</string>
+    <string name="weixun">WeiXun</string>
+    <string name="xindong">XinDong</string>
+
+    <string name="qingse1">qingse</string>
+    <string name="riza1">riza</string>
+    <string name="tiancheng1">tiancheng</string>
+    <string name="youya1">youya</string>
+    <string name="weixun1">weixun</string>
+    <string name="xindong1">xindong</string>
+
+    <string name="ziran">ZiRan</string>
+    <string name="rouhe">RouHe</string>
+    <string name="nongmi">NongMi</string>
+    <string name="meihuo">MeiHuo</string>
+    <string name="babi">BaBi</string>
+    <string name="wumei">WuMei</string>
+
+    <string name="ziran1">ziran</string>
+    <string name="rouhe1">rouhe</string>
+    <string name="nongmi1">nongmi</string>
+    <string name="meihuo1">meihuo</string>
+    <string name="babi1">babi</string>
+    <string name="wumei1">wumei</string>
+
+    <string name="biaozhunmei">BiaoZhun</string>
+    <string name="jianmei">Jian</string>
+    <string name="liuyemei">LiuYe</string>
+    <string name="pingzhimei">PingZhi</string>
+    <string name="liuxingmei">LiuXing</string>
+    <string name="oushimei">OuShi</string>
+
+    <string name="biaozhunmei1">biaozhunmei</string>
+    <string name="jianmei1">jianmei</string>
+    <string name="liuyemei1">liuyemei</string>
+    <string name="pingzhimei1">pingzhimei</string>
+    <string name="liuxingmei1">liuxingmei</string>
+    <string name="oushimei1">oushimei</string>
+
+    <string name="none">None</string>
+    <string name="none1">""</string>
+</resources>

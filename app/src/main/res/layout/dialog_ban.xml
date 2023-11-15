@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:background="@drawable/common_white_radius10_bg"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="@drawable/shape_corner_green_half_15"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/ban_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禁言设置"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="请选择用户昵称的禁言"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+
+        <RadioButton
+            android:id="@+id/ban_text_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_marginTop="@dimen/dp_23"
+            android:button="@drawable/app_select_check"
+            android:text="禁言后：评论主播可见，观众不可见"
+            android:paddingLeft="@dimen/dp_11"
+            android:textColor="#ff717171"
+            android:checked="true"
+            android:textSize="15sp" />
+
+
+        <RadioButton
+            android:id="@+id/ban_text_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_marginTop="@dimen/dp_23"
+            android:button="@drawable/app_select_check"
+            android:text="禁言后：评论主播不可见，观众不可见"
+            android:paddingLeft="@dimen/dp_11"
+            android:textColor="#ff717171"
+            android:textSize="15sp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_45">
+
+            <Button
+                android:id="@+id/ban_cancel_bt"
+                android:layout_width="121dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="@dimen/dp_33"
+                android:background="@drawable/ban_cancel"
+                android:text="取消"
+                android:textColor="#717171"
+                android:textSize="@dimen/textSize_18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ban_confirm_bt"
+                android:layout_width="121dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="@dimen/dp_33"
+                android:background="@drawable/ban_confirm"
+                android:text="确认禁言"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

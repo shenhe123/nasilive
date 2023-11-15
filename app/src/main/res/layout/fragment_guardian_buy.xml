@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+  >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_corner_white2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_350"
+            android:layout_height="match_parent"
+
+
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_year"
+                    android:layout_width="@dimen/dp_110"
+
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/bg_guardian_red"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_year_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:text="年守护"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_year_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_year_1"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:text="独享踢人、禁言尊贵特权"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_year_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_15"
+
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:text="3000"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_year_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_toRightOf="@id/tv_year_3"
+                        android:layout_marginBottom="@dimen/dp_22"
+                        android:text=" 金币"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+                <!--week-->
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_month"
+                    android:layout_width="@dimen/dp_110"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@mipmap/bg_guardian_white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_month_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:text="月守护"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_month_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_month_1"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:text="专属礼物享2倍经验特权"
+                        android:textColor="@color/color_A2A2A2"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_month_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginBottom="21dp"
+                        android:text="3000"
+                        android:textColor="@color/color_FF8B02"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tv_month_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_toRightOf="@id/tv_month_3"
+                        android:layout_marginBottom="@dimen/dp_22"
+                        android:text=" 金币"
+                        android:textColor="@color/color_FF8B02"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+                <!--week-->
+
+                <RelativeLayout
+                    android:id="@+id/rl_week"
+                    android:layout_width="@dimen/dp_110"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@mipmap/bg_guardian_white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_week_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:text="7日守护"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_week_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_week_1"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:text="送出指定礼物则自动开通7日守护"
+                        android:textColor="@color/color_A2A2A2"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_week_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:text="3000"
+                        android:textColor="@color/color_FF8B02"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tv_week_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_toRightOf="@id/tv_week_3"
+                        android:layout_marginBottom="@dimen/dp_22"
+                        android:text=" 金币"
+                        android:textColor="@color/color_FF8B02"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+                <!--week-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_my_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的金币"
+                    android:textColor="@color/color_5B5B5B"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:text="充值 >"
+                    android:textColor="@color/color_FF6273"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_40">
+
+
+            <ImageView
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_15"
+                android:src="@mipmap/guardian_notice" />
+
+            <TextView
+                android:id="@+id/tv_over_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:textColor="@color/color_5B5B5B"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/iv_shenfen"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_guardian_shenfen" />
+
+                <TextView
+                    android:id="@+id/tv_shenfen_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/iv_shenfen"
+                    android:text="专属身份标识"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_shenfen_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_shenfen_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/iv_shenfen"
+                    android:text="成为守护后，在主播直播间麦序、公聊区域、真爱团中展示特殊身份标识"
+                    android:textColor="@color/color_939393"
+                    android:textSize="11sp"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/iv_texiao"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_guardian_texiao" />
+
+                <TextView
+                    android:id="@+id/tv_texiao_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/iv_texiao"
+                    android:text="专属身份标识"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_texiao_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_texiao_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/iv_texiao"
+                    android:text="成为守护后，进入主播直播间拥有进场弹幕和欢迎语"
+                    android:textColor="@color/color_939393"
+                    android:textSize="11sp"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/iv_gift"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_centerVertical="true"
+
+                    android:src="@mipmap/ic_guardian_gift" />
+
+                <TextView
+                    android:id="@+id/tv_gift_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/iv_gift"
+                    android:text="专属礼物"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_gift_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_gift_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/iv_gift"
+                    android:text="开通守护后享有专属守护礼物使用权"
+                    android:textColor="@color/color_939393"
+                    android:textSize="11sp"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/iv_tequan"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_guardian_tequan" />
+
+                <TextView
+                    android:id="@+id/tv_tequan_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/iv_tequan"
+                    android:text="尊贵特权"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_tequan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_tequan_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/iv_tequan"
+                    android:text="年守护拥有直播间踢人/禁言权限"
+                    android:textColor="@color/color_939393"
+                    android:textSize="11sp"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="@dimen/dp_175"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_40"
+                android:background="@drawable/shape_corner_purple_5"
+                android:gravity="center"
+                android:text="开通"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@mipmap/live_backround"
+   >
+
+    <com.tencent.liteav.demo.play.SuperPlayerView
+        android:id="@+id/superVertPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/atv_ply_v_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <FrameLayout
+                android:id="@+id/atv_ply_v_content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.view.ViewPager>
+    </com.tencent.liteav.demo.play.SuperPlayerView>
+
+
+    <RelativeLayout
+        android:id="@+id/group_1"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:background="@mipmap/icon_live_gift_anim_3">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:src="@mipmap/icon_live_gift_3"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_gift_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_live_gift_anim_4"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/avatar"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_join"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_170"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_15"
+        android:visibility="gone"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="5dp"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/dp_200">
+
+
+
+        <com.tencent.liteav.demo.play.SuperPlayerView
+            android:id="@+id/txcv_join"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_stop_join"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:background="@mipmap/join_close"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_gravity="right"
+            />
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_live_background"/>
+
+        <com.feicui365.live.widget.DYLoadingView
+            android:id="@+id/dy_loading"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

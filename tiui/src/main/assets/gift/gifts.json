@@ -1,0 +1,68 @@
+{
+  "gifts": [
+    {
+      "name": "aixin",
+      "dir": "aixin",
+      "category": "default",
+      "thumb": "aixin_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "kaixinle",
+      "dir": "kaixinle",
+      "category": "default",
+      "thumb": "kaixinle_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "meihua",
+      "dir": "meihua",
+      "category": "default",
+      "thumb": "meihua_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "chengbao",
+      "dir": "chengbao",
+      "category": "default",
+      "thumb": "chengbao_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "yuanbao",
+      "dir": "yuanbao",
+      "category": "default",
+      "thumb": "yuanbao_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "kuaiting",
+      "dir": "kuaiting",
+      "category": "default",
+      "thumb": "kuaiting_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "qiubite",
+      "dir": "qiubite",
+      "category": "default",
+      "thumb": "qiubite_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "semimi",
+      "dir": "semimi",
+      "category": "default",
+      "thumb": "semimi_icon.png",
+      "voiced": false,
+      "downloaded": false
+    }
+  ]
+}

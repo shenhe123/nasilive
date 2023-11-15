@@ -1,0 +1,76 @@
+{
+  "interactions": [
+    {
+      "name": "butterfly",
+      "dir": "butterfly",
+      "category": "default",
+      "thumb": "butterfly_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "全屏模式，眨眨眼或闭上一只眼睛(3秒)"
+    },
+    {
+      "name": "dragon",
+      "dir": "dragon",
+      "category": "default",
+      "thumb": "dragon_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "全屏模式，张张嘴(3秒)"
+    },
+    {
+      "name": "hungry",
+      "dir": "hungry",
+      "category": "default",
+      "thumb": "hungry_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "全屏模式，张张嘴(3秒)"
+    },
+    {
+      "name": "nezha",
+      "dir": "nezha",
+      "category": "default",
+      "thumb": "nezha_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "全屏模式，挑挑眉(3秒)"
+    },
+    {
+      "name": "sweet",
+      "dir": "sweet",
+      "category": "default",
+      "thumb": "sweet_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "全屏模式，张张嘴(3秒)"
+    },
+    {
+      "name": "mermaid",
+      "dir": "mermaid",
+      "category": "default",
+      "thumb": "mermaid_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "全屏模式，张张嘴(3秒)"
+    },
+    {
+      "name": "panda",
+      "dir": "panda",
+      "category": "default",
+      "thumb": "panda_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "全屏模式，挑挑眉(3秒)"
+    },
+    {
+      "name": "rabbit",
+      "dir": "rabbit",
+      "category": "default",
+      "thumb": "rabbit_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "全屏模式，眨眨眼或闭上一只眼睛(3秒)"
+    }
+  ]
+}

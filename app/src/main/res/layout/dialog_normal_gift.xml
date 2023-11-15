@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_gift"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginHorizontal="5dp"
+        android:layout_weight="1" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/ci_gift"
+        app:ci_drawable="@drawable/shape_theme_round"
+        app:ci_drawable_unselected="@drawable/shape_corner_white_45"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+</LinearLayout>

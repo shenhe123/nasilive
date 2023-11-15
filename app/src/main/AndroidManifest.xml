@@ -1,0 +1,867 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:targetSandboxVersion="1"
+    package="com.feicui365.live">
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.CALL_PHONE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_LOGS" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-feature android:name="android.hardware.Camera"/>
+<uses-feature android:name="android.hardware.camera.autofocus" />
+<application
+    android:name="com.feicui365.live.base.MyApp"
+    android:allowBackup="true"
+    android:icon="@mipmap/logo"
+    android:label="@string/app_name"
+    android:largeHeap="true"
+    android:networkSecurityConfig="@xml/network_security_config"
+    android:roundIcon="@mipmap/logo"
+    android:supportsRtl="true"
+    tools:replace="allowBackup"
+    android:usesCleartextTraffic="true"
+    android:theme="@style/AppTheme"
+    android:resizeableActivity="false">
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.HomeActivity"
+        android:theme="@style/AppTheme2"
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.ShopCarActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+   <!--     <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+    </activity>
+
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.EditMyAddressActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+ <!--       <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+    </activity>
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.MyLevelActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.PublishTrendActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+    <activity
+        android:name="com.feicui365.live.ui.act.PhotoWallActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.LiveManageActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+    <activity
+        android:name="com.feicui365.live.ui.act.LiveDetailActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:screenOrientation="portrait" />
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.WebViewActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.WebShopActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.CollectActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.MyShortVideoActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.SwiftMessageActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:screenOrientation="portrait" />
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.RejectActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:screenOrientation="portrait" />
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.AccountManageActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:screenOrientation="portrait" />
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.MyTrendActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.UserTrendsActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.ReplayTrendActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.LoginActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.InviteHistoryActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.IncomeAgentActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.InviteHistoryAgentActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.ReportItemActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.SearchActivity"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.ReportActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.RegisterAndPasswordActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.PhoneLoginActivity"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:theme="@style/AppTheme3"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.PhoneLoginActivity2"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:theme="@style/AppTheme3"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.im.MyTUIC2CChatActivity"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:theme="@style/AppTheme3"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.PhoneRegeditActivity2"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:theme="@style/AppTheme3"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.SettingActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme3"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.BuyMemberActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.InviteFriendActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+    android:name="com.feicui365.live.wxapi.WXEntryActivity"
+    android:label="@string/app_name"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar"
+    android:exported="true"
+
+    android:launchMode="singleTask">
+
+
+    </activity>
+
+
+    <activity
+        android:name="com.feicui365.live.wxapi.WXPayEntryActivity"
+        android:exported="true"
+        android:launchMode="singleTop">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:scheme="wx39c17448a6a2fc23"/>
+        </intent-filter>
+
+    </activity>
+
+
+
+
+
+    <activity
+        android:name="com.feicui365.live.sv.TCPictureJoinActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.sv.TCPicturePickerActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCTripleRecordVideoPickerActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoCutActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoEditerActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoEffectActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoFollowRecordActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoJoinerActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoPickerActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoPublisherActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoRecordActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.sv.TCVideoTripleScreenActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.ShortVideoPublishActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.VideoPlayActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.MyWalletActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.CashOutHistoryActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.WalletManagerActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.MyIncomeActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.BindPhoneActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.MySettingActivity"
+        android:screenOrientation="portrait"
+
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.ApplyAnchorActivity"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.RoomManagerActivity"
+
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.LivePushActivity"
+        android:theme="@style/AppTheme2"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.LivePushActivity3"
+        android:theme="@style/AppTheme2"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.ToPayActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.AllMessageActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.FollowActivity"
+
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.SuperPlayerActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+
+        />
+
+    <activity
+        android:name="com.feicui365.live.ui.act.SuperPlayerVerticalActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+
+        />
+
+    <activity
+        android:name="com.alipay.sdk.app.H5PayActivity"
+
+        android:exported="false"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+
+    <activity
+        android:name="com.alipay.sdk.app.H5AuthActivity"
+
+        android:exported="false"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize|stateHidden">
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.SystemMessageActivity"
+
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+        android:name="com.feicui365.live.ui.act.IntimacyListActivity"
+
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.ShortVideoCenterActivity"
+
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+     />
+    <activity
+        android:name="com.feicui365.live.ui.act.UserShortVideoActivity"
+
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+       />
+    <activity
+        android:name="com.feicui365.live.ui.act.AnchorCenterActivity"
+
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.PhotoInfoActivity"
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+  <activity
+      android:name="com.feicui365.live.ui.act.SearchTalkActivity"
+      android:screenOrientation="portrait"
+
+      android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+  <activity
+      android:name="com.feicui365.live.ui.act.UserRankActivity"
+
+      android:screenOrientation="portrait"
+      android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+  <activity
+      android:name="com.feicui365.live.ui.act.TopicShortVideoActivity"
+
+      android:screenOrientation="portrait"
+      android:configChanges="orientation|keyboardHidden|screenSize"/>
+  <activity
+      android:name="com.feicui365.live.ui.act.TopicMomentVideoActivity"
+
+      android:screenOrientation="portrait"
+      android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+    <!--商城相关-->
+    <activity
+        android:name="com.feicui365.live.shop.activity.GoodsInfoActivity"
+
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.PublishGoodsCommentActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+    <activity
+        android:name="com.feicui365.live.shop.activity.GoodsCommentActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+  <!--      <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.ShopActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+<!--              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+    </activity>
+
+
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.ConfirmOrderActivity"
+        android:screenOrientation="portrait"
+        android:launchMode="singleTop"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--        <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.ConfirmOrderToBuyActivity"
+        android:screenOrientation="portrait"
+        android:launchMode="singleTop"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--        <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.MyAddressActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--        <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>-->
+    </activity>
+
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.PaySuccessActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--        <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.DepositActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--        <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>-->
+    </activity>
+
+
+
+
+
+    <activity
+        android:name="com.feicui365.live.ui.act.SplashActivity"
+        android:theme="@style/MySplashTheme"
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.UserOrderActivity"
+
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+<!--        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.UserOrderInfoActivity"
+
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+         <!--   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.DeliveryActivity"
+
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+   <!--        <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>-->
+    </activity>
+
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.UserRefundActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--        <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>-->
+    </activity>
+    <activity
+        android:name="com.feicui365.live.shop.activity.UserRefundOrderInfoActivity"
+
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+              <!--  <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.ScanActivity"
+
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+          <!--      <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.SellerShopActivity"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme4"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--      <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.UserShopActivity"
+        android:screenOrientation="portrait"
+        android:launchMode="singleTop"
+        android:theme="@style/AppTheme4"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--      <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.SellerOrderActivity"
+
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--      <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.SellerRefundOrderInfoActivity"
+
+        android:screenOrientation="portrait"
+
+        android:configChanges="orientation|keyboardHidden|screenSize">
+        <!--      <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+    </activity>
+    <activity
+        android:name="com.feicui365.live.shop.activity.AddGoodsActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+<!--              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.GoodClassifyActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+  <!--      <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.SellerOrderInfoActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+        >
+        <!--      <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.SendGoodActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+          <!--    <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.SellerRefundActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        <!--    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.GoodsManagerActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        <!--    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.SellerWithDrawActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        <!--    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+    </activity>
+
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.SellerCashOutHistoryActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        <!--    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.shop.activity.FootMarkActivity"
+
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        <!--    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+    </activity>
+
+
+    <activity
+        android:name="com.feicui365.live.live.activity.LiveEditActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.live.activity.LivePushActivity2"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.live.activity.LivePlayVerticalActivity2"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+    <activity
+        android:name="com.feicui365.live.live.activity.LivePlayHorActivity2"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
+
+    </activity>
+
+    <activity
+        android:name="com.feicui365.live.ui.act.UserMessageActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+
+
+    <meta-data android:name="android.max_aspect" android:value="2.2" />
+</application>
+</manifest>
+

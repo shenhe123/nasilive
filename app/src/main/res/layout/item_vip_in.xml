@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/rl_root"
+    android:layout_width="@dimen/dp_250"
+    android:layout_height="@dimen/dp_33"
+    android:layout_marginLeft="@dimen/dp_15"
+    android:background="@mipmap/bg_anchor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        
+        
+        <ImageView
+            android:id="@+id/iv_vip_level"
+            android:layout_width="@dimen/dp_17"
+            android:layout_height="@dimen/dp_21"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_1"
+            android:src="@mipmap/youxia"/>
+
+        <ImageView
+            android:id="@+id/iv_guardian"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@mipmap/ic_protect"/>
+
+        <TextView
+            android:id="@+id/tv_vip_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="游侠"
+            android:textColor="#8BFFB4"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#FFF727"
+            android:textSize="12sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:text="进入直播间"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

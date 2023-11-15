@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner_black_15_20">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_iv"
+        android:layout_width="@dimen/dp_26"
+        android:layout_height="@dimen/dp_26"
+        android:layout_gravity="left|top"
+        android:paddingVertical="@dimen/dp_2" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <!-- <TextView
+         android:id="@+id/tv_address"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginEnd="@dimen/dp_5"
+         android:background="@drawable/chat_address_bg"
+         android:paddingLeft="@dimen/dp_5"
+         android:paddingRight="@dimen/dp_5"
+         android:paddingTop="@dimen/dp_3"
+         android:paddingBottom="@dimen/dp_3"
+         android:textColor="@color/chat_address_font"
+         android:textSize="15sp"
+         android:visibility="gone" />
+
+     <TextView
+         android:id="@+id/tv_msg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginEnd="@dimen/dp_5"
+         android:textColor="@color/white"
+         android:textSize="15sp"
+         android:visibility="gone" />-->
+
+</LinearLayout>

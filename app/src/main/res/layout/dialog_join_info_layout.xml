@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_230"
+        android:layout_height="@dimen/dp_170"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_corner_white5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_15">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_45"
+                android:src="@mipmap/moren"
+                app:civ_border_color="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_toRightOf="@id/civ_avatar"
+                android:maxEms="10"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nickname"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_toRightOf="@id/civ_avatar"
+                android:maxEms="10"
+                android:text="2"
+                android:textColor="#BDBDBD"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_15"
+            android:gravity="center"
+            android:inputType=""
+            android:text="向你发出一个连麦请求"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_line_gray3"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:text="拒绝" />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_corner_theme_15"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="接受" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

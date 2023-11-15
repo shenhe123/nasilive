@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_15">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_back"
+            android:layout_centerVertical="true"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/moren"
+            android:layout_toRightOf="@id/iv_back"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/civ_avatar"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_age"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_13"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_7"
+            android:layout_toRightOf="@id/civ_avatar"
+            android:background="@drawable/shape_corner_pink">
+
+
+            <ImageView
+                android:id="@+id/iv_sex"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_2"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/boy_2" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_toRightOf="@id/iv_sex"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_13"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_7"
+
+            android:layout_toRightOf="@id/rl_age"
+            android:background="@drawable/shape_corner_origan">
+
+
+            <ImageView
+                android:id="@+id/iv_huangguan"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_1"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_dongtai_vip" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_toRightOf="@id/iv_huangguan"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+        <!--大于1张图-->
+        <cn.bingoogolapple.photopicker.widget.BGANinePhotoLayout
+            android:id="@+id/npl_item_moment_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:bga_npl_itemCornerRadius="0dp"
+            app:bga_npl_itemSpanCount="3"
+            app:bga_npl_itemWhiteSpacing="@dimen/dp_4"
+            app:bga_npl_itemWidth="@dimen/dp_110"
+            app:bga_npl_otherWhiteSpacing="@dimen/dp_64"
+            app:bga_npl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
+            app:bga_npl_showAsLargeWhenOnlyOne="true" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_23"
+        android:text=""
+        android:textColor="#B9B9B9"
+        android:textSize="12sp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最新评论"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginBottom="@dimen/dp_11"/>
+
+</LinearLayout>

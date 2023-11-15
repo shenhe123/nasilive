@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <cn.bingoogolapple.photopicker.widget.BGAImageView
+        android:id="@+id/iv_item_nine_photo_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:bga_iv_square="true"
+        tools:src="@mipmap/bga_pp_ic_holder_light" />
+
+    <ImageView
+        android:id="@+id/iv_lock"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:src="@mipmap/nofufei2"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/iv_item_nine_photo_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:padding="@dimen/bga_pp_size_delete_padding"
+        android:src="@mipmap/ic_delete_3"
+        android:visibility="gone"
+        tools:visibility="visible" />
+    <TextView
+        android:id="@+id/tv_single_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_price_bg"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_2"
+
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:textSize="11sp"
+        android:text="50金币"
+        android:gravity="center" />
+</RelativeLayout>

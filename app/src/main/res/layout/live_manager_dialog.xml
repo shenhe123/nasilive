@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/shape_corner_white_half_15"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="15sp" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_ececec" />
+
+        <TextView
+            android:id="@+id/tv_ban"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/st_live_ban"
+            android:textSize="15sp" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_ececec" />
+
+        <TextView
+            android:id="@+id/tv_set_manager"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/st_set_manager"
+            android:visibility="gone"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/v_manager"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_ececec" />
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/st_cancel"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

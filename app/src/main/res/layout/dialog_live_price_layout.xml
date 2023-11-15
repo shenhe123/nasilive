@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/price_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_64"
+        android:layout_marginRight="@dimen/dp_64"
+        android:background="@drawable/shape_corner_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_21"
+            android:text="提醒"
+            android:textColor="#ff333333"
+            android:textSize="18sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_content"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_21"
+            android:text="您的金币即将耗尽"
+            android:textColor="#ff333333"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="@dimen/dp_26"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="@string/cancel"
+                    android:textColor="#000"
+                    android:background="@drawable/shape_line_gray2"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_submit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_corner_theme"
+                    android:gravity="center"
+
+                    android:layout_centerInParent="true"
+                    android:text="立即充值"
+                    android:textColor="#ffffffff"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

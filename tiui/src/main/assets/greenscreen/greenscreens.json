@@ -1,0 +1,24 @@
+{
+  "greenScreens": [
+    {
+      "name": "gs_class_room.png",
+      "thumb": "gs_class_room.png",
+      "downloaded": true
+    },
+    {
+      "name": "gs_imperial_palace.png",
+      "thumb": "gs_imperial_palace.png",
+      "downloaded": true
+    },
+    {
+      "name": "gs_starry_sky.png",
+      "thumb": "gs_starry_sky.png",
+      "downloaded": true
+    },
+    {
+      "name": "gs_the_bund.png",
+      "thumb": "gs_the_bund.png",
+      "downloaded": true
+    }
+  ]
+}

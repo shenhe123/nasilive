@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:paddingHorizontal="@dimen/dp_15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格 (元)"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品价格"
+            android:gravity="right"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:focusableInTouchMode="true"
+            android:textSize="15sp" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_height="@dimen/dp_50">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="库存 (件)"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/et_left_count"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品库存"
+            android:gravity="right"
+            android:background="@null"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:focusableInTouchMode="true"
+            android:textSize="15sp" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

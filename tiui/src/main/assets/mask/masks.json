@@ -1,0 +1,29 @@
+{
+  "masks": [
+    {
+      "name": "panda",
+      "thumb": "panda_icon.png",
+      "downloaded": false
+    },
+    {
+      "name": "leopard",
+      "thumb": "leopard_icon.png",
+      "downloaded": false
+    },
+    {
+      "name": "fox",
+      "thumb": "fox_icon.png",
+      "downloaded": false
+    },
+    {
+      "name": "pig",
+      "thumb": "pig_icon.png",
+      "downloaded": false
+    },
+    {
+        "name": "spirit",
+        "thumb": "spirit_icon.png",
+        "downloaded": false
+    }
+  ]
+}

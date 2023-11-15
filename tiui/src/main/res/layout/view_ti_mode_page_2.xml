@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/ti_bg_panel_content"
+    android:layout_height="225dp"
+    android:gravity="center">
+
+    <cn.tillusory.tiui.custom.DrawableTextView
+        android:id="@+id/quick_beauty"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:drawablePadding="19dp"
+        android:gravity="center"
+        android:text="@string/quick_beauty"
+        android:textColor="@color/ti_unselected"
+        android:textSize="12sp"
+        app:dt_top_drawable="@drawable/ic_ti_mode_quick_beauty"
+        app:dt_top_height="32dp"
+        app:dt_top_width="32dp" />
+
+    <cn.tillusory.tiui.custom.DrawableTextView
+        android:id="@+id/makeup"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="160dp"
+        android:drawablePadding="19dp"
+        android:gravity="center"
+        android:text="@string/makeup"
+        android:textColor="@color/ti_unselected"
+        android:textSize="12sp"
+        app:dt_top_drawable="@drawable/ic_ti_mode_makeup"
+        app:dt_top_height="32dp"
+        app:dt_top_width="32dp" />
+
+</LinearLayout>

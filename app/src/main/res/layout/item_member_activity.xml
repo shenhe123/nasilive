@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_member"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/dp_50">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/dp_9"
+                android:layout_height="@dimen/dp_16"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_back_white" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贵族中心"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:layout_below="@id/rl_title"
+        android:id="@+id/tl_my_income"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_height="40dp"
+     android:layout_centerHorizontal="true"
+        app:tl_indicator_color="#E8CF8B"
+        app:tl_indicator_height="@dimen/dp_3"
+        app:tl_indicator_width="@dimen/dp_11"
+        app:tl_textSelectColor="#E8CF8B"
+        app:tl_textUnselectColor="#83796A"
+        app:tl_tab_space_equal="true"
+        app:tl_textsize="18dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_my_income"
+        android:layout_below="@id/tl_my_income"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

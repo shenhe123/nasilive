@@ -1,0 +1,36 @@
+{
+  "watermarks": [
+    {
+      "x": 0,
+      "y": 0,
+      "ratio": 20,
+      "name": "watermark.png",
+      "thumb": "watermark.png",
+      "downloaded": true
+    },
+    {
+      "x": 80,
+      "y": 0,
+      "ratio": 20,
+      "name": "watermark1.png",
+      "thumb": "watermark1_icon.png",
+      "downloaded": true
+    },
+    {
+      "x": 0,
+      "y": 80,
+      "ratio": 20,
+      "name": "watermark2.png",
+      "thumb": "watermark2_icon.png",
+      "downloaded": true
+    },
+    {
+      "x": 80,
+      "y": 80,
+      "ratio": 20,
+      "name": "watermark3.png",
+      "thumb": "watermark3_icon.png",
+      "downloaded": true
+    }
+  ]
+}

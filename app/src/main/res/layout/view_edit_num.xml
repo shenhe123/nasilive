@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_subtract"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:padding="@dimen/dp_5"
+        android:src="@mipmap/btn_delete" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:text="0"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/color_8c8c8c"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_plus"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:padding="@dimen/dp_5"
+        android:src="@mipmap/btn_plus" />
+
+
+</LinearLayout>

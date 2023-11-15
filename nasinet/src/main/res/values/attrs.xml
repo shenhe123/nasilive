@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DrawableTextView">
+        <attr name="dt_top_width" format="dimension"/>
+        <attr name="dt_top_height" format="dimension"/>
+        <attr name="dt_left_width" format="dimension"/>
+        <attr name="dt_left_height" format="dimension"/>
+        <attr name="dt_right_width" format="dimension"/>
+        <attr name="dt_right_height" format="dimension"/>
+        <attr name="dt_bottom_width" format="dimension"/>
+        <attr name="dt_bottom_height" format="dimension"/>
+        <attr name="dt_top_drawable" format="reference"/>
+        <attr name="dt_left_drawable" format="reference"/>
+        <attr name="dt_right_drawable" format="reference"/>
+        <attr name="dt_bottom_drawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyFrameLayout2">
+        <attr name="mfl_ratio" format="float"/>
+        <attr name="mfl_offestY" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="PopupLayout">
+        <attr name="pop_bg_color" format="color"/>
+        <attr name="pop_radius" format="dimension"/>
+        <attr name="pop_stroke_width" format="dimension"/>
+        <attr name="pop_stroke_color" format="color"/>
+        <attr name="pop_arrow_width" format="dimension"/>
+        <attr name="pop_arrow_height" format="dimension"/>
+    </declare-styleable>
+
+</resources>

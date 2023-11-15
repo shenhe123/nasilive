@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 主题资源文件夹
+    sourceSets {
+        main {
+            res.srcDirs += "src/main/res-light"
+            res.srcDirs += "src/main/res-lively"
+            res.srcDirs += "src/main/res-serious"
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar','*.aar'], dir: '../../../../tuikit/android/libs')
+
+
+  implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.android.support:recyclerview-v7:28+'
+    implementation 'com.android.support:appcompat-v7:28+'
+    def projects = this.rootProject.getAllprojects().stream().map{project->project.name}.collect()
+    println "all projects : {$projects}"
+    if (projects.contains("imsdk-plus")) {
+        api project(':imsdk-plus')
+    } else {
+        api 'com.tencent.imsdk:imsdk-plus:6.5.2816'
+    }
+    implementation 'com.android.support:cardview-v7:+'
+  //  api 'com.tencent.imsdk:imsdk:5.1.66'
+}

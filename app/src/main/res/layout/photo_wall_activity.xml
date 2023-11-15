@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="@dimen/dp_37"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/shape_corner_theme"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+    <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+        android:id="@+id/snpl_moment_add_photos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_15"
+        app:bga_snpl_deleteDrawable="@mipmap/ic_delete_3"
+
+        app:bga_snpl_deleteDrawableOverlapQuarter="false"
+        app:bga_snpl_editable="true"
+        app:bga_snpl_itemCornerRadius="0dp"
+        app:bga_snpl_itemSpanCount="3"
+        app:bga_snpl_itemWhiteSpacing="4dp"
+        app:bga_snpl_itemWidth="0dp"
+        app:bga_snpl_maxItemCount="9"
+        app:bga_snpl_otherWhiteSpacing="10dp"
+        app:bga_snpl_placeholderDrawable="@mipmap/zhanwei"
+        app:bga_snpl_plusDrawable="@mipmap/tianjia"
+        app:bga_snpl_plusEnable="true"
+        app:bga_snpl_sortable="false" />
+</RelativeLayout>

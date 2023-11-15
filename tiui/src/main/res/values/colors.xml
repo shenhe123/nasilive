@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018-2020 拓幻科技 - tillusory.cn. All rights reserved.-->
+<resources>
+    <color name="ti_bg_panel_tab">#FFFFFF</color>
+    <color name="ti_bg_panel_content">#FFFFFF</color>
+    <color name="ti_selected">#58DDDD</color>
+    <color name="ti_unselected">#444444</color>
+    <color name="ti_unselected2">#BDBDBD</color>
+    <color name="ti_divider">#959595</color>
+</resources>

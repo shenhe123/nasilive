@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/dp_54"
+            android:layout_height="@dimen/dp_54"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/moren" />
+
+
+        <ImageView
+            android:id="@+id/iv_vip"
+            android:layout_width="17dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_user_level"
+            android:layout_width="30dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_lv1"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_item_status"
+            android:layout_width="30dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_live_dialog_room_manager" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_7"
+            >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textColor="#505050"
+                android:textSize="@dimen/textSize_18" />
+
+
+
+            <TextView
+                android:id="@+id/iv_item_status_2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_line_red"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp"
+                android:text="解除禁言"
+                android:textColor="#717171"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

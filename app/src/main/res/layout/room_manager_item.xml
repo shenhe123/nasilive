@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@mipmap/moren" />
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/civ_avatar">
+            
+            
+            <ImageView
+                android:id="@+id/iv_vip"
+                android:layout_width="@dimen/dp_17"
+                android:layout_height="@dimen/dp_21"
+                android:layout_marginRight="10dp"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/iv_user_level"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_13"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_vip"
+                android:src="@mipmap/lv1"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/iv_manager"
+                android:layout_width="28dp"
+                android:layout_height="13dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@id/iv_user_level"
+                android:src="@mipmap/room_manager"
+               android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_manager"
+                android:textColor="#505050"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="@dimen/dp_58"
+        android:layout_height="@dimen/dp_24"
+        android:src="@mipmap/cancel_manager"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        />
+
+</RelativeLayout>

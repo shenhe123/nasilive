@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mode_cute">萌颜</string>
+    <string name="quick_beauty">一键美颜</string>
+    <string name="standard">标准</string>
+    <string name="delicate">精致</string>
+    <string name="cute">可爱</string>
+    <string name="celebrity">网红</string>
+    <string name="natural">自然</string>
+
+    <string name="makeup">美妆</string>
+    <string name="makeup_on">美妆:开</string>
+    <string name="makeup_off">美妆:关</string>
+    <string name="blusher">腮红</string>
+    <string name="eyelash">睫毛</string>
+    <string name="eyebrow">眉毛</string>
+
+    <string name="qingse">青涩</string>
+    <string name="riza">日杂</string>
+    <string name="tiancheng">甜橙</string>
+    <string name="youya">优雅</string>
+    <string name="weixun">微醺</string>
+    <string name="xindong">心动</string>
+
+    <string name="ziran">自然</string>
+    <string name="rouhe">柔和</string>
+    <string name="nongmi">浓密</string>
+    <string name="meihuo">魅惑</string>
+    <string name="babi">芭比</string>
+    <string name="wumei">妩媚</string>
+
+    <string name="biaozhunmei">标准眉</string>
+    <string name="jianmei">剑眉</string>
+    <string name="liuyemei">柳叶眉</string>
+    <string name="pingzhimei">平直眉</string>
+    <string name="liuxingmei">流星眉</string>
+    <string name="oushimei">欧式眉</string>
+
+    <string name="none">无</string>
+</resources>
